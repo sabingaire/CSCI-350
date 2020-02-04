@@ -24,6 +24,12 @@
 ;It returns the sum of the numbers not nested
 ;It checks the list and keep on summing the numbers
 
+;Question 2 Code
+
+(define (sum-up-numbers-simple L)
+        (cond
+        ((null? L) 0)
+
 
 
 
