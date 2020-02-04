@@ -18,6 +18,12 @@
          )
   )
 
+;Algorithm for question 2:
+;This function takes L as an argument
+;We need to sum the numbers
+;It returns the sum of the numbers not nested
+;It checks the list and keep on summing the numbers
+
 
 
 
