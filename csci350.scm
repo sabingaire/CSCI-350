@@ -53,5 +53,9 @@
          )
   )
 
+;Question 4 algorithm
+;I will have helper functions which will help find the required min above min value
+
+
 
 
