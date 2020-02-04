@@ -12,6 +12,7 @@
 
 (define (reverse-general L)
         (cond
+        ((null? L) L);Check if the list is empty
 
 
 
