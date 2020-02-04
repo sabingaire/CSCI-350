@@ -42,7 +42,11 @@
 ;Only difference is that we add the number in listed loop when we find its sum as well
 
 
+;Question 3 Code
 
+(define (sum-up-numbers-general L)
+        (cond
+         ((null? L) 0)
 
 
 
