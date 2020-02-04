@@ -57,5 +57,9 @@
 ;I will have helper functions which will help find the required min above min value
 
 
+(define (min-above-min L1 L2)
+  (cond
+    ((null? L1) #f);This will return null if L1 is empty
+    ((null? L2) (min-val L1));
 
 
