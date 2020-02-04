@@ -35,6 +35,11 @@
         )
   )
 
+;Algorithm for question 3:
+;This function takes L as an argument
+;This time the nested numbers will be added as sum
+;The function will use recurrsion and add function and head, ignore non -integer atom
+
 
 
 
