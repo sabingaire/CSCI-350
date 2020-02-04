@@ -8,6 +8,11 @@
 ;First we check for null list, if its null we return as it is
 ;otherwise we need to add head to the tail of cdr
 
+;Question1 Code
+
+(define (reverse-general L)
+        (cond
+
 
 
 
