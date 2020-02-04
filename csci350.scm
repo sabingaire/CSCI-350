@@ -39,6 +39,7 @@
 ;This function takes L as an argument
 ;This time the nested numbers will be added as sum
 ;The function will use recurrsion and add function and head, ignore non -integer atom
+;Only difference is that we add the number in listed loop when we find its sum as well
 
 
 
