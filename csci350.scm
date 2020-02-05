@@ -108,9 +108,15 @@
 ;The larger- helper function will help the larger-number function
 ;This will take list and number as arguments
 
-(define (larger-number-tail L num high)
+(define (larger-number-helper L num high)
   (cond
     ((null? L) high);Return false if list is empty
+    ((not (number? (car L))) (larger-number-helper (cdr L) num high))
+    ((and (> (car L) num) (< (car L) high)) (larger-number-helper L num (car L)))
+    (#t (larger-number-helper (cdr L) num high))
+  )
+)
+
     
 
 
