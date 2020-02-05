@@ -84,6 +84,12 @@
 ;The function min-value-list will take list and number as arguments
 ;This will return the number in list lower than the given number
 
+(define (min-value-list L num)
+  (cond
+    ((null? L) num);Checks null
+    ((not (number? (car L))) (min-value-list (cdr L) num))
+    
+
 
 
 
