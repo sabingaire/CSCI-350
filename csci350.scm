@@ -96,6 +96,11 @@
 ;Similarly finding a list of number larger than a given number
 ;This function will take list and number as argument
 
+(define (larger-number L1 num)
+  (cond
+    ((null? L1) #f); The function to return false if list empty
+    ((not (number? (car L1))) (larger-number (cdr L1) num));
+
 
 
 
