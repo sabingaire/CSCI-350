@@ -61,9 +61,9 @@
 
 (define (min-above-min L1 L2)
   (cond
-    ((null? L1) #F);This will return null if L1 is empty
+    ((null? L1) #f);This will return null if L1 is empty
     ((null? L2) (min-value L1));;I will call helper function to find the minimum value if L2 is null
-    (#T (larger-number L1 (min-value L2)))
+    (#t (larger-number L1 (min-value L2)))
     )
   )
 
@@ -75,10 +75,10 @@
 
 (define (min-value L)
   (cond
-    ((null? L) #F);it will return false if the list is empty
+    ((null? L) #f);it will return false if the list is empty
     ((not (number? (car L))) (min-value (cdr L)))
     ((null? (cdr L)) (car L))
-    (#T (min-value-list (cdr L) (car L))); min-value list is the function which will take in list and number and return the lowest number
+    (#t (min-value-list (cdr L) (car L))); min-value list is the function which will take in list and number and return the lowest number
   )
 )
 
@@ -91,7 +91,7 @@
     ((null? L) num);Checks null
     ((not (number? (car L))) (min-value-list (cdr L) num))
     ((< (car L) num) (min-value-list (cdr L) (car L)))
-    (#T (min-value-list (cdr L) num))
+    (#t (min-value-list (cdr L) num))
   )
 )
 
@@ -100,10 +100,10 @@
 
 (define (larger-number L1 num)
   (cond
-    ((null? L1) #F); The function to return false if list empty
+    ((null? L1) #f); The function to return false if list empty
     ((not (number? (car L1))) (larger-number (cdr L1) num));
     ((> (car L1) num) (larger-number-helper (cdr L1) num (car L1))); This is the helper function
-    (#T (larger-number (cdr L1) num))
+    (#t (larger-number (cdr L1) num))
   )
 )
 
@@ -115,10 +115,18 @@
     ((null? L) high);Return false if list is empty
     ((not (number? (car L))) (larger-number-helper (cdr L) num high))
     ((and (> (car L) num) (< (car L) high)) (larger-number-helper L num (car L)))
-    (#T (larger-number-helper (cdr L) num high))
+    (#t (larger-number-helper (cdr L) num high))
   )
 )
 
+(define (min-value L)
+  (cond
+    ((null? L) #f);it will return false if the list is empty
+    ((not (number? (car L))) (min-value (cdr L)))
+    ((null? (cdr L)) (car L))
+    (#t (min-value-list (cdr L) (car L))); min-value list is the function which will take in list and number and return the lowest number
+  )
+)
     
 
 
