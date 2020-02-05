@@ -74,6 +74,11 @@
 (define (min-value L)
   (cond
     ((null? L) #f);it will return false if the list is empty
+    ((not (number? (car L))) (min-value (cdr L)))
+    ((null? (cdr L)) (car L))
+    (#t (min-value-list (cdr L) (car L))); min-value list is the function which will take in list and number and return the lowest number
+  )
+)
 
 
 
