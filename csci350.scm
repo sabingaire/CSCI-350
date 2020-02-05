@@ -88,7 +88,10 @@
   (cond
     ((null? L) num);Checks null
     ((not (number? (car L))) (min-value-list (cdr L) num))
-    
+    ((< (car L) num) (min-value-list (cdr L) (car L)))
+    (#t (min-value-list (cdr L) num))
+  )
+)
 
 
 
