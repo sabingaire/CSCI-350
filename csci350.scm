@@ -69,6 +69,11 @@
 ;Now the function min value will take in a list and find the minimum number from the list
 ;If the list is empty it will return false
 ;Goes recurssively as it will return a minimum value
+;Helper function:
+
+(define (min-value L)
+  (cond
+    ((null? L) #f);it will return false if the list is empty
 
 
 
