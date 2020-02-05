@@ -93,6 +93,10 @@
   )
 )
 
+;Similarly finding a list of number larger than a given number
+;This function will take list and number as argument
+
+
 
 
 
