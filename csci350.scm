@@ -60,6 +60,10 @@
 (define (min-above-min L1 L2)
   (cond
     ((null? L1) #f);This will return null if L1 is empty
-    ((null? L2) (min-val L1));
+    ((null? L2) (min-value L1));;I will call helper function to find the minimum value if L2 is null
+    (#t (larger-number L1 (min-value L2)))
+    )
+  )
+
 
 
