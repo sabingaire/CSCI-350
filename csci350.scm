@@ -81,5 +81,9 @@
 )
 
 
+;The function min-value-list will take list and number as arguments
+;This will return the number in list lower than the given number
+
+
 
 
