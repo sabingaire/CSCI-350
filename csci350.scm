@@ -100,10 +100,14 @@
   (cond
     ((null? L1) #f); The function to return false if list empty
     ((not (number? (car L1))) (larger-number (cdr L1) num));
-    ((> (car L1) num) (larger-number-helper (cdr L1) num (car L1)))
+    ((> (car L1) num) (larger-number-helper (cdr L1) num (car L1))); This is the helper function
     (#t (larger-number (cdr L1) num))
   )
 )
+
+;The larger- helper function will help the larger-number function
+;This will take list and number as arguments
+
 
 
 
